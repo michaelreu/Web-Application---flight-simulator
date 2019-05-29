@@ -1,0 +1,19 @@
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="4" Orientation="Vertical" >
+            <Slider x:Name="sizeSlider" Minimum="8" TickPlacement="BottomRight"
+TickFrequency="6" Maximum="64" Margin="10" Value="12"/>
+            <TextBlock Text="Watch the text size!" Margin="4"
+FontSize="{Binding ElementName=sizeSlider, Path=Value }"/>
+        </StackPanel>
+        <Button Name="second" Click="HandlerClicked" Content="click left" Background="DarkSlateBlue" Margin="522,95,79.6,143" />
+        <Button Name="myButton" Click="changeName" Content="click me" Background="Peru" Margin="254,121,324.6,167" />
+    </Grid>
+</Window>
