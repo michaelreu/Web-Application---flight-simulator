@@ -98,8 +98,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Client.cs" />
-    <Compile Include="Models\ClientHandler.cs" />
-    <Compile Include="Models\ClientHandlerFlightParser.cs" />
     <Compile Include="Models\Fs-Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
